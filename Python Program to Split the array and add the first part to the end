@@ -1,0 +1,13 @@
+#Python Program to Split the array and add the first part to the end
+# or you can say left rotation of array by x places
+
+arr = [12, 10, 5, 6, 52, 36] 
+pos = 2
+
+for i in range(0,pos):
+    first_element = arr[0]
+    for j in range(0,len(arr)-1):
+        arr[j] = arr[j+1]
+    arr[len(arr)-1] = first_element
+    
+print(arr)
