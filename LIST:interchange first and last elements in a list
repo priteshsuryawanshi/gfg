@@ -3,4 +3,12 @@ l=[12, 35, 9, 56, 24]
 
 l[0],l[-1] = l[-1],l[0]
 
-print(l
+print(l)
+
+#Using tuple
+
+#get = l[0],l[-1] #Store the first and the last element in a tuple
+#print(get)
+#l[-1],l[0] = get  #Unoack the values of tuple
+
+#print(l)
