@@ -1,0 +1,35 @@
+#Python program to swap 2 elements in a LIST
+
+#Approach1
+#simply swap the positions of the elements
+
+l = [23, 65, 19, 90]
+
+p1 = 2
+p2 = 3
+
+#l[p1-1],l[p2-1] = l[p2-1],l[p1-1]
+
+
+#Approach2
+#Using the list.pop() command
+
+print(l)
+value_p1 = l.pop(p1-1)
+value_p2 = l.pop(p2-2)     #Its (p2-2) as the list shrinks because of the pop in previous step
+
+print(l)              #The 2 popped elements should not be present
+
+l.insert(p1-1,value_p2)
+l.insert(p2-1,value_p1)
+
+print(l)
+
+#Approach3
+#Using tuple
+
+#get=l[p1-1],l[p2-1]       #Saved the values in a tuple
+#print(get)
+#
+#l[p2-1],l[p1-1] = get     #Unpacked tuple
+#print(l)
