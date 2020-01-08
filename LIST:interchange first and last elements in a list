@@ -10,5 +10,21 @@ print(l)
 #get = l[0],l[-1] #Store the first and the last element in a tuple
 #print(get)
 #l[-1],l[0] = get  #Unoack the values of tuple
-
 #print(l)
+
+#Using the * operator
+
+#start, *middle, end = l
+#l = [end, *middle, start]
+#print(l)
+
+#Using l.pop()
+
+#first = l.pop(0)    
+#last = l.pop(-1) 
+
+#list.insert(0, last)   
+#list.append(first)
+
+########## For any clarifications read ############################
+https://www.geeksforgeeks.org/python-program-to-interchange-first-and-last-elements-in-a-list/
