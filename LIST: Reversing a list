@@ -1,0 +1,21 @@
+#Reversing a list
+
+l = [15, 14, 13, 12, 11, 10]
+print(l)
+
+#Using the reverse built-in function
+#The elements of the list are reversed in-place
+l.reverse()
+print(l)
+
+#Using the reversed() built-in function
+#reversed() returns an iterator
+#The elements of the list are reversed in-place
+#for i in reversed(l):
+#    print(i)
+
+
+#Using slicing
+#In this approach a copy of the list is created, the reversing does not happen in-place
+l[::-1]
+
