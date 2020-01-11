@@ -1,0 +1,24 @@
+# Ways to check if element exists in a LIST
+
+test_list = [ 1, 6, 3, 5, 3, 4 ]
+
+for i in test_list: 
+    if(i == 4) : 
+        print ("Element Exists")
+        
+#Using in
+#if (4 in test_list): 
+#    print ("Element Exists")
+
+
+#Using set() and in
+#set eliminates the duplicate elements in the list
+#test_list_set = set(test_list) 
+#if 4 in test_list_set : 
+#    print ("Element Exists")
+
+
+#Using sort() + bisect_left()
+#test_list_bisect.sort() 
+#if bisect_left(test_list_bisect, 4): 
+#    print ("Element Exists") 
