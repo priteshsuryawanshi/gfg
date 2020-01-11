@@ -1,0 +1,15 @@
+#Python program to remove Nth occurence of a word from the list
+
+l = ["can", "you",  "can", "a", "can" ,"?"]
+word = "can"
+n = 2
+count = 0
+
+for i in range(0, len(l)):
+    if l[i] == word:
+        count += 1
+        if count == n:
+            print(l.pop(i))
+            break
+        
+print(l)
