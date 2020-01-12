@@ -1,0 +1,44 @@
+#Cloning or copying a LIST
+
+l1 = [4, 8, 2, 10, 15, 18]
+
+#Using slicing
+#l2 = l1[:]
+#
+#print(l1)
+#print(l2)
+
+#Using extend
+#l2 = []
+#l2.extend(l1)
+#print(l1)
+#print(l2)
+
+#Using the list() method
+#l2 = list(l1)
+#print(l1)
+#print(l2)
+
+#Using shallow copy
+#import copy
+#l2 = copy.copy(l1)
+#print(l2)
+
+#Using deep copy
+#import copy
+#l2 = copy.deepcopy(l1)
+#print(l2)
+
+#Using list comprehension
+#l2 = [i for i in l1]
+#print(l2)
+
+#Using append() method
+#l2 = []
+#for i in l1:
+#    l2.append(i)
+#print(l2)
+
+#Using the copy() method
+l2 = l1.copy()
+print(l2)
