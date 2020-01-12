@@ -1,0 +1,21 @@
+#LIST: Sum of elements in a LIST
+
+l1 = [11, 5, 17, 18, 23]
+
+#Using for loop
+sum1 = 0
+for i in l1:
+    sum1 += i
+print(sum1)
+
+#Using recursive way
+def sumList(list, size):
+    if size == 0:
+        return 0
+    else:
+        return list[size-1] + sumList(list, size-1)
+        
+print(sumList(l1, len(l1)))
+
+#Using sum() method
+print(sum(l1))
