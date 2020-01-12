@@ -1,0 +1,26 @@
+#find second largest number in a LIST
+
+l1 = [10, 20, 4, 99, 45]
+
+#sorting the list and printing the second last element
+l1.sort()
+print(l1[-2])
+
+#Removing the max element from the list
+new_list = set(l1)      #Using set to remove any duplicate entries
+new_list.remove(max(l1))
+print(max(new_list))
+
+#Using a hatke techinique
+max = max(l1[0], l1[1])
+second_max = min(l1[0], l1[1])
+
+for i in range(2, len(l1)):
+    if l1[i] > max:
+        second_max = max
+        max = l1[i]
+    else:
+        if l1[i] > second_max:
+            second_max = l1[i]
+            
+print(second_max)
