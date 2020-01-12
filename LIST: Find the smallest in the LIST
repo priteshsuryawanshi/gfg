@@ -1,0 +1,10 @@
+#Find the smallest element in the LIST
+
+l1 = [10, 20, 4, 45, 99]
+
+#Sort the list and print the first element
+l1.sort()
+print(l1[0])
+
+#Using min() method
+print(min(l1))
