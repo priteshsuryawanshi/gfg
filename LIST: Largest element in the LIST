@@ -1,0 +1,10 @@
+#Program to find the largest element in the LIST
+
+l1 = [10, 20, 4, 99, 45]
+
+#Sort the LIST and print the last element
+l1.sort()
+print(l1[-1])
+
+#Using max() method
+print(max(l1))
