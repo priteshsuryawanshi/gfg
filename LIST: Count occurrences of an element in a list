@@ -1,0 +1,20 @@
+l = [15, 6, 7, 10, 12, 20, 10, 28, 10]
+count = 0
+x = 10
+
+for i in l:
+    if i == x:
+        count += 1
+        
+print(count)
+
+#Using count() method
+print(l.count(x))
+
+#Using Counter() method from collections
+
+from collections import Counter
+d = Counter(l)
+print(d)
+print("{} has occured {} times".format(x,d[x]))
+
