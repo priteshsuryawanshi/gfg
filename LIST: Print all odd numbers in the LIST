@@ -1,0 +1,12 @@
+#LIST: Print all odd numberes in the list
+
+l1 = [10, 21, 4, 45, 66, 93]
+
+#Using for loop
+for i in l1:
+    if i%2 != 0:
+        print(i,end=",")
+
+
+#Using list comprehension
+#print([i for i in l1 if i%2 != 0])
