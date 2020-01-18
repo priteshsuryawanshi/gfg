@@ -1,0 +1,19 @@
+#LIST: Count the odd and even numbers in the LIST
+
+l1 = [10, 21, 4, 45, 66, 93,100]
+
+even, odd = 0,0
+
+#Using for loop
+for i in l1:
+    if i%2 == 0:
+        even+=1
+    else:
+        odd+=1
+        
+print("Even=",even)
+print("Odd=",odd)
+
+#Using list comprehension
+print("Even=",len([i for i in l1 if i%2 == 0]))
+print("Odd=",len([i for i in l1 if i%2 != 0]))
