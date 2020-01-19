@@ -1,0 +1,17 @@
+# Python program to find Cumulative sum of a list
+
+l1 = [10, 20, 30, 40, 50]
+
+#my approach
+l2 = [l1[0]]
+sum1 = l2[0]
+
+for i in l1[1:]:
+    sum1 += i
+    l2.append(sum1)
+print(l2)
+
+#Using list comprehension and slicing
+length = len(l1)
+cu_list = [sum(l1[:x + 1]) for x in range(0, length)]
+print(cu_list)
