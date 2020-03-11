@@ -1,0 +1,42 @@
+######### Method 1 #########################
+#Reverse the string and comapre with the original string
+
+s1 = "aa"
+
+s2 = s1[::-1]
+print(s2)
+
+if s1==s2:
+    print("string is a palindrome")
+else:
+    print("string is not a palindrome")
+    
+    
+########## Method 2 #########################
+#Run loop from starting to length/2 and check first character to last character of string and second to second last one and so on …. If any character mismatches, the string wouldn’t be palindrome.
+
+s1 = "radar"
+flag = 0
+
+for i in range(0, len(s1)//2):
+    if s1[0]==s1[len(s1)-1-i]:
+        flag = 1
+    else:
+        break
+
+if flag:
+    print("is palindrome")
+else:
+    print("is not palindrome")
+    
+    
+########## Method 3 #########################
+#Using the built method reversed() and join()  =>> ‘ ‘.join(reversed(string))
+
+s1 = "radar"
+s2 = ''.join(reversed(s1))
+
+if s1 == s2:
+    print("is palindrome")
+else:
+    print("is not a palindrome")
