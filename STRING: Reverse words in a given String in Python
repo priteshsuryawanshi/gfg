@@ -1,0 +1,12 @@
+#Reverse words in a given String in Python
+
+#1. Separate the words in the given string using str.split(' ')
+#2. Reverse the list obtained after the first step
+#3. Join the list ' '.join(list in Step2)
+
+s1 = "geeks quiz practice code"
+
+temp_str = s1.split(' ')
+
+s2 = ' '.join(temp_str[::-1])
+print(s2)
