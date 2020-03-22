@@ -1,0 +1,19 @@
+### Program to accept the strings which contains all vowels
+
+
+ipstr = "SEEquoiaL"
+
+
+vowels = set("aeiou")
+s = set({})
+
+for i in ipstr.lower():
+    if i in vowels:
+        s.add(i)
+    else:
+        pass
+
+if len(s) == len(vowels):
+    print("ACCEPTED")
+else:
+    print("REJECTED")
