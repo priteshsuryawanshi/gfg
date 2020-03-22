@@ -1,0 +1,6 @@
+### Find words which are greater than given length k
+
+s = "hello geeks for geeks is computer science portal" 
+k = 4
+
+print(" ".join([ i for i in s.split() if len(i) > k ]))
