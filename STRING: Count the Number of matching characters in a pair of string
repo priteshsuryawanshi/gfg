@@ -1,0 +1,18 @@
+### Count the Number of matching characters in a pair of string
+
+###   my approach ###############
+
+str1 = 'aabcddekll12@'
+str2 = 'bb22ll@55k'
+match = 0
+for i in set(str2):
+    if i in str1:
+        match += 1
+    else:
+        pass
+print(match)
+
+
+###################            GFG                   ##################################
+
+https://www.geeksforgeeks.org/python-count-the-number-of-matching-characters-in-a-pair-of-string/
