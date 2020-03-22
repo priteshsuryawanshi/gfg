@@ -1,0 +1,14 @@
+### program to count number of vowels using sets in given string
+
+str1 = 'GeeksforGeeks'
+count = 0
+vstr = "aeiou"
+
+for i in str1.lower():
+    if i in vstr:
+        print(i)
+        count += 1
+    else:
+        pass
+    
+print(count)
