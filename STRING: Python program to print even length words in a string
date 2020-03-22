@@ -1,0 +1,11 @@
+### Python program to print even length words in a string
+
+s = "This is a python language"
+
+l = s.split(" ")
+
+for i in l:
+    if len(i)%2 == 0:
+        print(i)
+    else:
+        continue
