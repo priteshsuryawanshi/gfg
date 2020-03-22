@@ -1,0 +1,35 @@
+###  Check if a given string is binary string or not
+
+#################    Approach 1     ########################################
+
+
+s = "01010101010"
+#s = "1111111111"
+#s = "0000000000"
+
+bin_set = {'0','1'}
+
+str_set = set(s)
+
+
+if str_set == bin_set or str_set == {'0'} or str_set == {'1'}:
+    print("ACCEPTED")
+else:
+    print("REJECTED")
+    
+    
+    
+    
+###################   Approcah 2            ##################################
+
+s = "110000010100101010101111111"
+
+bin_str = "01"
+
+for i in s:
+    if i not in bin_str:
+        print("REJECTED")
+        break
+else:
+    print("ACCEPTED")
+    
